@@ -57,8 +57,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import type { RegisterForm } from './types';
-import { register } from './api';
+import type { RegisterForm } from '../common/types';
+import { register } from '../common/api';
 
 const router = useRouter();
 const loading = ref(false);

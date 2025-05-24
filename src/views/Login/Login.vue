@@ -38,8 +38,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import type { LoginForm } from './types';
-import { login } from './api';
+import type { LoginForm } from '../common/types';
+import { login } from '../common/api';
 
 const router = useRouter();
 const loading = ref(false);

@@ -57,8 +57,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
-import type { ResetPasswordForm } from './types';
-import { resetPassword } from './api';
+import type { ResetPasswordForm } from '../common/types';
+import { resetPassword } from '../common/api';
 
 const router = useRouter();
 const loading = ref(false);

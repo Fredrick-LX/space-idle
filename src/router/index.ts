@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Login from '../components/start/Login.vue';
-import Register from '../components/start/Register.vue';
-import ResetPassword from '../components/start/ResetPassword.vue';
+import Login from '../views/Login/Login.vue';
+import Register from '../views/Register/Register.vue';
+import ResetPassword from '../views/ResetPassword/ResetPassword.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -28,7 +28,7 @@ const router = createRouter({
         {
             path: '/game',
             name: 'Game',
-            component: () => import('../views/Game.vue'),
+            component: () => import('../views/Game/Game.vue'),
             meta: { requiresAuth: true }
         }
     ]
